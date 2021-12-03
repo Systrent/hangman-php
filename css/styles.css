@@ -1,0 +1,175 @@
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+    NOTE: All classes that have tag 'admin' on them,
+    are customized from the developer, adding to Boostrap classes.
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* -------------------------- GENERAL -------------------------- */
+
+html body {
+    /* Google Font -> Roboto Mono */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    background-color: #e0e0e0;
+    font-family: 'Roboto Mono', monospace, 'Open Sans', 'Helvetica Neue';
+}
+
+html textarea:focus,
+html input[type='text']:focus,
+html input[type='password']:focus,
+html input[type='datetime']:focus,
+html input[type='datetime-local']:focus,
+html input[type='date']:focus,
+html input[type='month']:focus,
+html input[type='time']:focus,
+html input[type='week']:focus,
+html input[type='number']:focus,
+html input[type='email']:focus,
+html input[type='url']:focus,
+html input[type='search']:focus,
+html input[type='tel']:focus,
+html input[type='color']:focus,
+html .uneditable-input:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* -------------------------- HEADER -------------------------- */
+
+html .navbar-admin {
+    border-bottom: 1px solid#5930b9;
+    box-shadow: 15px 15px 30px #bebebe;
+}
+
+html .navbar-logo-admin {
+    width: 2.5rem;
+    margin: 0 0.4rem;
+}
+
+html .navbar-title-admin {
+    margin: 0;
+    letter-spacing: 0.3rem;
+    font-size: 1.65rem;
+    font-weight: 600;
+}
+
+html .login-button-top-admin {
+    color: #ffffff;
+    border: none;
+    outline: 1px solid #5930b9;
+    border-radius: 2rem;
+    transition: outline-offset 0.1s;
+}
+
+html .login-button-top-admin:hover {
+    outline: 1px solid #e0e0e0;
+    outline-offset: -4px;
+    background-color: #5930b9;
+}
+
+html .login-button-top-admin:focus {
+    box-shadow: none;
+    background-color: #7758bf;
+}
+
+/* -------------------------- LOGIN -------------------------- */
+
+html .login-title-admin {
+    margin: 3.5rem 0;
+    background: linear-gradient(145deg, #5930b9, #e0e0e0);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 300;
+}
+
+html .sub-card-admin {
+    display: flex;
+    justify-content: center;
+    margin: 0 3rem;
+}
+
+html .card-admin {
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 25px 25px 50px #bebebe, -25px -25px 50px #ffffff;
+    width: 32rem;
+}
+
+html .user-label-admin,
+.pass-label-admin {
+    font-weight: 400;
+    color: #808080;
+    letter-spacing: 0.15rem;
+}
+
+html .user-input-admin {
+    color: #5930b9;
+    border: 1px solid #5930b9;
+    background-color: #ebebeb;
+    border-radius: 2rem;
+}
+
+html .user-input-admin:focus {
+    background-color: #eeeeee;
+    border: 1px solid #808080;
+}
+
+html .pass-input-admin {
+    color: #5930b9;
+    border: 1px solid #5930b9;
+    background-color: #ebebeb;
+    border-radius: 2rem;
+}
+
+html .pass-input-admin:focus {
+    background-color: #eeeeee;
+    border: 1px solid #808080;
+}
+
+html .login-button-admin {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #5930b9;
+    border: none;
+    outline: 1px solid #5930b9;
+    border-radius: 2rem;
+    height: 4rem;
+    width: 100%;
+    transition: outline-offset 0.1s;
+}
+
+html .login-button-admin:hover {
+    outline: 1px solid #e0e0e0;
+    outline-offset: -4px;
+}
+
+html .login-button-admin:focus {
+    background-color: #7758bf;
+}
+
+html .forgot-admin {
+    color: #5930b9;
+    display: block;
+}
+
+html .forgot-admin:hover {
+    color: #7758bf;
+}
+
+/* -------------------------- FOOTER -------------------------- */
+
+html .footer-admin {
+    background-color: #e0e0e0;
+    border-top: 1px solid #5930b9;
+    box-shadow: -15px -15px 30px #bebebe;
+}
+
+html .footer-p-admin {
+    margin: 2px;
+    font-size: 0.9rem;
+}
