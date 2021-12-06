@@ -24,11 +24,11 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 </head>
 <body>
-    <nav class="navbar-admin navbar navbar-expand-lg navbar-dark bg-dark py-4 px-3" style="">
+    <nav class="navbar-admin navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a href="index.php"><img class="navbar-logo-admin" src="images/hangman_logo.ico"></a>   
             <a class="navbar-title-admin navbar-brand" href="index.php">HANGMAN</a>
-            <button disable class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button disable class="navbar-toggler-admin navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse ms-5" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">

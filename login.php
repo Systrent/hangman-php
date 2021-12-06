@@ -28,11 +28,11 @@
                 <form action = <?php echo htmlentities($_SERVER['PHP_SELF']); ?> method="post" class="form-login-admin">
                     <table class="table table-responsive table-borderless table-sm">
                         <tr>
-                            <td class="user-label-admin align-middle" style="width: 6.1rem;"><label for="username">USERNAME:</label></td>
+                            <td class="user-label-admin align-middle"><label for="username">USERNAME:</label></td>
                             <td><input type="text" name="username" id="username" class="form-control user-input-admin" value="<?php if($_SERVER['REQUEST_METHOD'] == 'POST') echo $_POST['username']; ?>"></td>
                         </tr>
                         <tr>
-                            <td class="pass-label-admin align-middle" style="width: 6.1rem;"><label for="password">PASSWORD:</label></td>
+                            <td class="pass-label-admin align-middle"><label for="password">PASSWORD:</label></td>
                             <td><input type="password" name="password" id="password" class="form-control pass-input-admin"></td>
                         </tr>
                     </table>
@@ -40,6 +40,11 @@
                     <input type="submit" value="Login" class="login-button-admin">
                     <a href="#" class="forgot-admin mt-1"> Forgot password? </a>
                 </form>
+                <hr class="hr-login-admin">
+                <div class="register-card-admin">
+                    <label class="or-label-admin align-middle">OR</label><br>
+                    <a href="register.php" class="register-redirection-admin">Register</a>
+                </div>
             </div>
         </div>
 <?php

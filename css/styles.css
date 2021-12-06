@@ -41,18 +41,48 @@ html .uneditable-input:focus {
 html .navbar-admin {
     border-bottom: 1px solid#5930b9;
     box-shadow: 15px 15px 30px #bebebe;
+    padding: 1rem 0.5rem;
 }
 
 html .navbar-logo-admin {
     width: 2.5rem;
     margin: 0 0.4rem;
+    transition: outline 0.1s ease;
+}
+
+html .navbar-logo-admin:hover {
+    outline: 3px solid #5930b9;
+    border-radius: 2rem;
+    outline-offset: -2px;
 }
 
 html .navbar-title-admin {
     margin: 0;
-    letter-spacing: 0.3rem;
-    font-size: 1.65rem;
+    letter-spacing: 0.35rem;
+    font-size: 2rem;
     font-weight: 600;
+    transition: letter-spacing 0.1s ease;
+}
+
+html .navbar-title-admin:hover {
+    letter-spacing: 0.55rem;
+}
+
+html .navbar-toggler-admin {
+    box-shadow: none;
+    border-radius: 2rem;
+    outline: 1px solid#5930b9;
+    transition: outline-width 0.1s ease;
+}
+
+html .navbar-toggler-admin:hover {
+    box-shadow: none;
+    outline-width: 3px;
+}
+
+html .navbar-toggler-admin:focus {
+    box-shadow: none;
+    background-color: #7758bf;
 }
 
 html .login-button-top-admin {
@@ -60,7 +90,8 @@ html .login-button-top-admin {
     border: none;
     outline: 1px solid #5930b9;
     border-radius: 2rem;
-    transition: outline-offset 0.1s;
+    transition: outline-offset 0.1s ease;
+    margin: 0 0.5rem;
 }
 
 html .login-button-top-admin:hover {
@@ -100,9 +131,16 @@ html .card-admin {
     width: 32rem;
 }
 
-html .user-label-admin,
-.pass-label-admin {
-    font-weight: 400;
+html .user-label-admin {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #808080;
+    letter-spacing: 0.15rem;
+}
+
+html .pass-label-admin {
+    font-size: 1rem;
+    font-weight: 500;
     color: #808080;
     letter-spacing: 0.15rem;
 }
@@ -140,7 +178,7 @@ html .login-button-admin {
     border-radius: 2rem;
     height: 4rem;
     width: 100%;
-    transition: outline-offset 0.1s;
+    transition: outline-offset 0.1s ease;
 }
 
 html .login-button-admin:hover {
@@ -161,6 +199,49 @@ html .forgot-admin:hover {
     color: #7758bf;
 }
 
+html .hr-login-admin {
+    border-radius: 2rem;
+    border-top: 1.5px solid#888888;
+    background-color: #888888;
+    margin: 2.2rem 0;
+}
+
+html .or-label-admin {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #808080;
+    letter-spacing: 0.15rem;
+}
+
+html .register-card-admin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html .register-redirection-admin {
+    text-decoration: none;
+    line-height: 2.85rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ebebeb;
+    background-color: #c5c5c5;
+    border: none;
+    outline: 1px solid #ececec;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 60%;
+    margin-top: 0.5rem;
+    transition: background-color 0.1s ease;
+    transition: width 0.1s ease;
+}
+
+html .register-redirection-admin:hover {
+    color: #ffffff;
+    background-color: #7758bf;
+    width: 64%;
+}
 /* -------------------------- FOOTER -------------------------- */
 
 html .footer-admin {
@@ -172,4 +253,22 @@ html .footer-admin {
 html .footer-p-admin {
     margin: 2px;
     font-size: 0.9rem;
+}
+
+/* -------------------------- MEDIA QUERIES -------------------------- */
+
+@media (max-width: 525px) {
+    html .user-label-admin {
+        font-size: 0.88rem;
+        letter-spacing: 0.125rem;
+    }
+
+    html .pass-label-admin {
+        font-size: 0.88rem;
+        letter-spacing: 0.125rem;
+    }
+
+    html .login-button-admin {
+        font-size: 1.3rem;
+    }
 }
