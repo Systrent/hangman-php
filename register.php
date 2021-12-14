@@ -1,5 +1,5 @@
 <?php
-    $title = 'USER LOGIN';
+    $title = 'REGISTER';
     require_once 'includes/header.php';
     require_once 'db/connection.php';
 
@@ -14,24 +14,32 @@
         - Contact number
     -->
 
-    <h1 class="text-center m-5">Registration</h1>
+    <h1 class="register-title-admin text-center">REGISTER</h1>
 
-    <form method="post" action="success.php" enctype="multipart/form-data" class="mx-3">
-        <div class="mb-3">
-            <label for="firstName" class="form-label">First Name</label>
-            <input required type="text" class="form-control" id="firstName" name="firstName" style="border-radius: 0.7rem;">
+    <div class="sub-card-admin">
+        <div class="card-admin p-5">
+            <form method="post" action="success.php" enctype="multipart/form-data" class="mx-2">
+                <div class="mb-3">
+                    <label for="username" class="user-reg-label-admin form-label">USERNAME</label>
+                    <input required type="text" class="user-reg-input-admin form-control" id="username" name="username">
+                </div>
+                                <div class="mb-3">
+                    <label for=password" class="pass-reg-label-admin form-label">PASSWORD</label>
+                    <div class="block-reg-pass-admin">
+                        <input required type="password" class="form-control pass-reg-input-admin" id="password" name="password">
+                        <button type="button" onclick="showPassword()" class="eyepass-admin"><span id="iconeye" class="fas fa-eye"></span></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="email-reg-label-admin form-label">EM@IL ADDRESS</label>
+                    <input required type="email" class="email-reg-input-admin form-control" id="email" name="email">
+                    <div id="emailHelp" class="email-reg-info-label-admin">We'll never share your email with anyone else.</div>
+                </div>
+                <br>
+                <button type="submit" id="submit" name="submit" class="submit-reg-admin">Submit</button>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for=lastName" class="form-label">Last Name</label>
-            <input required type="text" class="form-control" id="lastName" name="lastName" style="border-radius: 0.7rem;">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input required type="email" class="form-control" id="email" name="email" style="border-radius: 0.7rem;">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <button type="submit" id="submit" name="submit" class="btn btn-primary fs-5 w-100" style="height: 4rem; border-radius: 0.7rem;">Submit</button>
-    </form>
+    </div>
 <?php
     require_once 'includes/footer.php';
 ?>

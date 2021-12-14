@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#212529">
-    <title>Hangman Game - <?php echo $title ?></title>
+    <title>Hangman - <?php echo $title ?></title>
     <link rel="shortcut icon" href="images/hangman_logo.ico">
 
     <!-- Custom / CSS -->
@@ -22,6 +22,9 @@
 
     <!-- JQuery / CSS -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+    <!-- Font Awesome Icons / CSS -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"></link>
 </head>
 <body>
     <nav class="navbar-admin navbar navbar-expand-lg navbar-dark bg-dark">

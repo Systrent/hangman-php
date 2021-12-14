@@ -10,7 +10,6 @@
 html body {
     /* Google Font -> Roboto Mono */
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
     background-color: #e0e0e0;
     font-family: 'Roboto Mono', monospace, 'Open Sans', 'Helvetica Neue';
 }
@@ -57,6 +56,9 @@ html .navbar-logo-admin:hover {
 }
 
 html .navbar-title-admin {
+    /* Google Font -> Bebas Neue */
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    font-family: 'Bebas Neue', cursive, 'Roboto Mono', monospace, 'Open Sans', 'Helvetica Neue';
     margin: 0;
     letter-spacing: 0.35rem;
     font-size: 2rem;
@@ -131,13 +133,7 @@ html .card-admin {
     width: 32rem;
 }
 
-html .user-label-admin {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #808080;
-    letter-spacing: 0.15rem;
-}
-
+html .user-label-admin,
 html .pass-label-admin {
     font-size: 1rem;
     font-weight: 500;
@@ -145,18 +141,7 @@ html .pass-label-admin {
     letter-spacing: 0.15rem;
 }
 
-html .user-input-admin {
-    color: #5930b9;
-    border: 1px solid #5930b9;
-    background-color: #ebebeb;
-    border-radius: 2rem;
-}
-
-html .user-input-admin:focus {
-    background-color: #eeeeee;
-    border: 1px solid #808080;
-}
-
+html .user-input-admin,
 html .pass-input-admin {
     color: #5930b9;
     border: 1px solid #5930b9;
@@ -164,6 +149,7 @@ html .pass-input-admin {
     border-radius: 2rem;
 }
 
+html .user-input-admin:focus,
 html .pass-input-admin:focus {
     background-color: #eeeeee;
     border: 1px solid #808080;
@@ -242,6 +228,98 @@ html .register-redirection-admin:hover {
     background-color: #7758bf;
     width: 64%;
 }
+
+/* -------------------------- REGISTER -------------------------- */
+
+html .register-title-admin {
+    margin: 3.5rem 0;
+    background: linear-gradient(145deg, #5930b9, #e0e0e0);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 300;
+}
+
+html .user-reg-label-admin,
+html .pass-reg-label-admin,
+html .email-reg-label-admin {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #808080;
+    letter-spacing: 0.15rem;
+}
+
+html .email-reg-info-label-admin {
+    font-size: 0.85rem;
+    color: #999999;
+}
+
+html .user-reg-input-admin,
+html .pass-reg-input-admin,
+html .email-reg-input-admin,
+html .eyepass-admin {
+    color: #5930b9;
+    border: 1px solid #5930b9;
+    background-color: #ebebeb;
+    border-radius: 2rem;
+}
+
+html .user-reg-input-admin:focus,
+html .pass-reg-input-admin:focus,
+html .email-reg-input-admin:focus {
+    background-color: #eeeeee;
+    border: 1px solid #808080;
+}
+
+html .block-reg-pass-admin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html .pass-reg-input-admin {
+    border-radius: 2rem 0 0 2rem;
+    padding: 0.4rem 0.8rem;
+    max-width: 22rem;
+}
+
+html .eyepass-admin {
+    border-radius: 0 2rem 2rem 0;
+    width: 3rem;
+    height: 2.4rem;
+    color: #ebebeb;
+    border: 1px solid #5930b9;
+    background-color: #5930b9;
+}
+
+html .eyepass-admin:hover {
+    color: #ebebeb;
+    border: 1px solid #5930b9;
+    background-color: #7758bf;
+}
+
+html .submit-reg-admin {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #5930b9;
+    border: none;
+    outline: 1px solid #5930b9;
+    border-radius: 2rem;
+    height: 4rem;
+    width: 100%;
+    transition: outline-offset 0.1s ease;
+}
+
+html .submit-reg-admin:hover {
+    outline: 1px solid #e0e0e0;
+    outline-offset: -4px;
+}
+
+html .submit-reg-admin:focus {
+    background-color: #7758bf;
+}
+
 /* -------------------------- FOOTER -------------------------- */
 
 html .footer-admin {
@@ -258,11 +336,7 @@ html .footer-p-admin {
 /* -------------------------- MEDIA QUERIES -------------------------- */
 
 @media (max-width: 525px) {
-    html .user-label-admin {
-        font-size: 0.88rem;
-        letter-spacing: 0.125rem;
-    }
-
+    html .user-label-admin,
     html .pass-label-admin {
         font-size: 0.88rem;
         letter-spacing: 0.125rem;

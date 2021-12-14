@@ -11,14 +11,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script>
-        $( function() {
-            $( "#dateOfBirth" ).datepicker({
-                changeMonth: true,
-                changeYear: true,
-                dateFormat: "yy/mm/dd",
-                yearRange: "-100:+0"
-            });
-        });
+    function showPassword(){
+        let pass_type = document.getElementById("password");
+        let icon_eye = document.getElementById("iconeye");
+        if(pass_type.type == "password"){
+            pass_type.type = "text";
+            icon_eye.className = "fas fa-eye-slash";
+        }else{
+            pass_type.type = "password";
+            icon_eye.className = "fas fa-eye";
+        }
+    }
     </script>
 </body>
 

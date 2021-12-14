@@ -1,5 +1,5 @@
 <?php
-    $title = 'USER LOGIN';
+    $title = 'LOGIN';
     require_once 'includes/header.php';
     require_once 'db/connection.php';
 
@@ -25,7 +25,7 @@
 
         <div class="sub-card-admin">
             <div class="card-admin p-5">
-                <form action = <?php echo htmlentities($_SERVER['PHP_SELF']); ?> method="post" class="form-login-admin">
+                <form action = <?php echo htmlentities($_SERVER['PHP_SELF']); ?> method="post">
                     <table class="table table-responsive table-borderless table-sm">
                         <tr>
                             <td class="user-label-admin align-middle"><label for="username">USERNAME:</label></td>
