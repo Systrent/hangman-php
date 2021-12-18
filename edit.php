@@ -2,7 +2,7 @@
     $title = 'Edit Record';
     require_once 'includes/header.php';
     require_once 'includes/auth_check.php';
-    require_once 'db/connection.php';
+    require_once 'db/connection_db.php';
 
     $results = $crud->getSpecialties();
 

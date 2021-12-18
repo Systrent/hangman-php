@@ -1,9 +1,9 @@
 <?php
     $title = 'LOGIN';
     require_once 'includes/header.php';
-    require_once 'db/connection.php';
+    require_once 'db/connection_db.php';
 
-    //If data was submitted vian a form POST request, then...
+    //If data was submitted form POST request, then...
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $username = strtolower(trim($_POST['username']));
         $password = $_POST['password'];
@@ -15,8 +15,8 @@
         }
         else{
             $_SESSION['username'] = $username;
-            $_SESSION['userid'] = $result['pk_id'];
-            header('Location: viewrecords.php');
+            $_SESSION['userid'] = $result['pk_user_id'];
+            header('Location: index.php');
         }
     }
 ?>

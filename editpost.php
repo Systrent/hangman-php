@@ -1,5 +1,5 @@
 <?php
-    require_once 'db/connection.php';
+    require_once 'db/connection_db.php';
 
     //Get values from POST operation
     if(isset($_POST['submit'])){

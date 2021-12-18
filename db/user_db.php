@@ -38,17 +38,17 @@
             }
         }
 
-        public function getUser($username, $pass){
+        public function getUser($username, $password){
             try{
                 //Define SQL statement to be executed
-                $sql = "SELECT * FROM users WHERE username = :username AND pass = :pass";
+                $sql = "SELECT * FROM users WHERE username = :username AND password = :password";
                                 
                 //Prepare the SQL statement for execution
                 $stmt = $this->db->prepare($sql);
 
                 //Bind all placeholders in the actual values
                 $stmt->bindparam(':username', $username);
-                $stmt->bindparam(':pass', $pass);
+                $stmt->bindparam(':password', $password);
                 
                 //Execute statement
                 $stmt->execute();
